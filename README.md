@@ -4,16 +4,18 @@ Canal público de distribución y actualizaciones del launcher GDC7 para Windows
 
 ## Beta disponible
 
-[GDC7 0.1.16-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.16-beta.1).
+[GDC7 0.1.17-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.17-beta.1).
 
-Para reparar una copia cuyo actualizador falló: cerrar GDC7 y abrir `GDC7-Reparar-Actualizador-V2.cmd`. Comprueba y respalda tres archivos conocidos de la copia instalada, admite la reparación V1 y abre GDC7 para descargar, verificar, aplicar y reiniciar automáticamente. No requiere administrador. Las instrucciones de restauración están en `GDC7-0.1.16-Validacion.md`; el log del reparador queda junto al CMD.
+Inicio con paisaje a pantalla completa, logo centrado y JUGAR / OPCIONES / SALIR. Se elimina la página y las tarjetas de Pack del cliente. JUGAR verifica e instala los componentes administrados que falten y después inicia el juego; la barra debajo del botón muestra fase, archivo y progreso. Cuenta, memoria, carpeta, servidor, actualizaciones y diagnóstico están en Opciones.
 
-La 0.1.16 aplica las actualizaciones con un ayudante JavaScript mediante el GDC7.exe preparado y verificado. Ya no usa PowerShell para aplicar actualizaciones. Conserva SHA-256, firma original Ed25519, progreso por bytes, respaldo y restauración ante fallos. PowerShell integrado se usa solamente en el reparador inicial. No se alteran las protecciones de Windows.
+Corrige la lectura de ajustes durante las actualizaciones: las consultas de estado continúan disponibles, las escrituras esperan a que termine y la versión visible corresponde al paquete instalado. Conserva el ayudante interno de 0.1.16, la firma original Ed25519, hashes, respaldos y restauración ante fallos.
 
-Se mantiene el diseño, JUGAR con preparación automática y barra de progreso, el menú centrado del cliente, las cuentas, los ajustes y la carpeta de juego. Minecraft 1.21.11, Fabric 0.19.5, Java 21 y el pack visual mantienen sus versiones.
+Desde 0.1.16: cerrar Minecraft y Prism, Opciones → Actualizaciones de GDC7 → Buscar actualización → Reiniciar y actualizar. La búsqueda y descarga al abrir dependen del ajuste automático; aplicar requiere reiniciar desde el botón. No requiere reinstalar. Ajustes, cuentas, mundos, opciones y mods personales se conservan.
 
-Portable: extraer completo `GDC7-0.1.16-Portable-Windows.zip` y abrir GDC7.exe. Código editable: `GDC7-0.1.16-Codigo.zip`; los Source code automáticos de GitHub contienen este repositorio de distribución.
+Para una copia portable nueva: extraer completo GDC7-0.1.17-Portable-Windows.zip en su propia carpeta y abrir GDC7.exe. Código editable: GDC7-0.1.17-Codigo.zip. Los Source code automáticos de GitHub contienen este repositorio de distribución.
 
-Validación: 131 pruebas Node, siete comprobaciones del reparador en PowerShell Linux y 1000 restricciones del pack aprobadas. Se verificaron por descarga pública los ocho adjuntos y sus hashes. El verificador y preparador de 0.1.13 aceptan la firma original y los 181 archivos. Los archivos del reparador coinciden con los incluidos en la beta. La clave privada no se publica.
+Validación: 133 pruebas Node, 1000 restricciones del pack y la interfaz del mismo renderer en Chromium Linux a tres tamaños. La preparación y cancelación visual se verifican mediante datos controlados; estas pruebas no ejecutan Minecraft ni una sesión Microsoft real. Los verificadores y preparadores de 0.1.16 aceptan los 183 archivos del paquete firmado. Los diez adjuntos públicos coinciden en tamaño y digest SHA-256 con los originales verificados.
 
-La ejecución del reparador y el recorrido completo de la actualización en Windows siguen pendientes de comprobar en la PC. Los resultados y hashes están en la publicación. El canal es [updates/beta.json](updates/beta.json).
+La 0.1.16 se actualizó en la PC según el usuario. La 0.1.17 aún requiere comprobar allí el recorrido completo en Windows. Resultados, instrucciones, capturas y hashes están en la publicación. Minecraft 1.21.11, Fabric 0.19.5, Java 21, el pack y el menú 0.1.2 conservan sus versiones. La clave privada no se publica.
+
+El canal firmado está en [updates/beta.json](updates/beta.json).
