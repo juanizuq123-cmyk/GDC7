@@ -4,14 +4,17 @@ Canal público de distribución y actualizaciones del launcher GDC7 para Windows
 
 ## Beta disponible
 
-[GDC7 0.1.13-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.13-beta.1), reconstruida desde la 0.1.11 recuperada.
+[GDC7 0.1.14-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.14-beta.1).
 
-- **Instalar o actualizar la 0.1.11:** descargá `GDC7-Setup-0.1.13.exe`, cerrá Minecraft, Prism y GDC7 y ejecutá el instalador. Conserva los ajustes y la carpeta de juego.
-- **Portable:** descargá `GDC7-0.1.13-Portable-Windows.zip`, extraelo completo y abrí `GDC7.exe`.
-- **Código editable:** descargá `GDC7-0.1.13-Codigo.zip` en esa publicación. Los archivos Source code automáticos de GitHub contienen solamente este repositorio de distribución.
+- **Desde 0.1.13:** cerrá Minecraft y Prism; en GDC7 abrí Opciones → Actualizaciones → Buscar actualización → Descargar → Reiniciar y actualizar.
+- **Si seguís en 0.1.11:** descargá GDC7-Setup-0.1.14.exe, cerrá los procesos e instalá en la carpeta habitual. Conserva ajustes y carpeta de juego.
+- **Portable:** extraé completo GDC7-0.1.14-Portable-Windows.zip y abrí GDC7.exe.
+- **Código editable:** GDC7-0.1.14-Codigo.zip incluye el launcher, pruebas y fuente Java del menú. Los archivos Source code automáticos de GitHub contienen este repositorio de distribución.
 
-Incluye usuario local / no premium, Microsoft con Prism oficial, actualizaciones firmadas, jugador y skin guardados por Prism y mejoras de interfaz. Minecraft 1.21.11, Fabric 0.19.5, Java 21, el pack visual y el menú 0.1.1 se conservan.
+Inicio renovado con identidad GDC7 y JUGAR centrado. JUGAR comprueba e instala lo que falte, muestra fase y archivo en una barra debajo del botón y después inicia el cliente. Menú del juego 0.1.2: bosque y río al atardecer, logo centrado y botones nativos JUGAR / OPCIONES / SALIR. El menú anterior verificado se conserva en un respaldo antes de reemplazarlo. Microsoft sigue con Prism oficial y se conserva el usuario local.
 
-El canal beta está en [updates/beta.json](updates/beta.json). El launcher verifica la firma Ed25519, el tamaño, SHA-256 y las rutas antes de preparar una actualización. La clave privada se conserva fuera del repositorio y de los archivos públicos.
+Minecraft 1.21.11, Fabric 0.19.5, Java 21 y el pack visual mantienen sus versiones. Ajustes, mundos, capturas y cuentas se conservan.
 
-Validación: 111 pruebas automatizadas, interfaz real de Electron y 1.000 restricciones del pack comprobadas. La ejecución del juego, el instalador y el ayudante de actualización deben comprobarse en Windows. Las instrucciones y resultados detallados están incluidos en la publicación.
+El canal [updates/beta.json](updates/beta.json) usa la misma clave pública Ed25519 de la 0.1.13. Antes de activarlo se verificaron los ocho adjuntos por descarga pública y SHA-256 y se comprobó que el actualizador original 0.1.13 acepta la firma y prepara los 179 archivos de la nueva beta. La clave privada queda fuera de la entrega.
+
+Validación: 117 pruebas automatizadas, interfaz real de Electron, 255 comprobaciones Java, 1.000 restricciones del pack y archivos del instalador verificados. Falta comprobar el recorrido completo en Windows: ejecución del instalador y del ayudante PowerShell, sesión Microsoft real, llegada al nuevo menú y conexión al servidor. Los resultados, instrucciones y huellas están en la publicación.
