@@ -4,18 +4,18 @@ Canal público de distribución y actualizaciones del launcher GDC7 para Windows
 
 ## Beta disponible
 
-[GDC7 0.1.18-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.18-beta.1).
+[GDC7 0.1.19-beta.1](https://github.com/juanizuq123-cmyk/GDC7/releases/tag/v0.1.19-beta.1).
 
-Launcher oscuro y rojo basado en la referencia: logo oficial a la izquierda y JUGAR en el centro. Inicio y Opciones quedan en la navegación. Abajo aparecen solo Configuración y Carpeta del juego; se elimina Pack del cliente. El menú dentro de Minecraft conserva su versión 0.1.2.
+Incluye el JAR suministrado gdc7-client-0.1.0.jar, sin modificar ni recompilar, con GDC7 Protocol 1.0.0 integrado. JUGAR instala automáticamente el mod, verifica su integridad y lo repara si falta o está dañado; después inicia Minecraft. La barra debajo del botón indica fase, archivo y progreso.
 
-JUGAR verifica e instala automáticamente los componentes administrados que falten y luego inicia Minecraft. La barra debajo del botón indica fase, archivo y progreso; permite cancelar antes del arranque. Cuenta, memoria, servidor, actualizaciones y diagnóstico continúan en Opciones.
+Conserva el diseño oscuro y rojo de 0.1.18, el logo oficial y JUGAR en el centro. No hay controles de Pack del cliente. El menú dentro de Minecraft conserva la versión 0.1.2.
 
-Desde 0.1.17 o 0.1.16: cerrá Minecraft y Prism; Opciones → Actualizaciones de GDC7 → Buscar actualización → Reiniciar y actualizar. Con la búsqueda automática activa, descarga al abrir. No requiere reinstalar. Conserva el ayudante interno de 0.1.16, la firma Ed25519 original, los respaldos y los datos personales.
+Para actualizar desde 0.1.18: cerrá Minecraft y Prism; Opciones → Actualizaciones de GDC7 → Buscar actualización → Reiniciar y actualizar. Después pulsá JUGAR. Conserva la firma Ed25519 original, el ayudante interno, los respaldos y los datos personales.
 
-Para una copia portable nueva: extraé completo GDC7-0.1.18-Portable-Windows.zip en su propia carpeta y abrí GDC7.exe. Código editable: GDC7-0.1.18-Codigo.zip. Los Source code automáticos de GitHub contienen este repositorio de distribución.
+Para una copia portable nueva: extraé completo GDC7-0.1.19-Portable-Windows.zip en su propia carpeta y abrí GDC7.exe. Código editable: GDC7-0.1.19-Codigo.zip. Contiene el código del launcher y el JAR integrado; los fuentes Java del mod suministrado no fueron proporcionados. Los Source code automáticos de GitHub contienen este repositorio de distribución.
 
-Validación: 133 pruebas Node, 1000 restricciones del pack e interfaz del mismo renderer en Chromium Linux a 1200 × 820, 940 × 700 y 800 × 560. Preparación y cancelación verificadas con eventos controlados; estas pruebas no ejecutan Minecraft ni una sesión Microsoft real. El verificador y preparador de 0.1.17 aceptan los 183 archivos del paquete firmado. El recorrido completo en Windows requiere comprobación en la PC.
+Validación: 137 pruebas Node y 1018 restricciones de dependencias. El actualizador de 0.1.18 acepta la firma y prepara los 186 archivos del paquete. Las pruebas de instalación comprueban el JAR exacto, reutilización, reparación, preservación de archivos personales y detección de conflictos. No ejecutan Minecraft ni el recorrido completo en Windows; la prueba dentro del juego y la conexión con GDC7 Core están pendientes. GDC7 Core se instala por separado en el servidor.
 
-Instrucciones, capturas, validación y hashes acompañan la publicación. Minecraft 1.21.11, Fabric 0.19.5, Java 21 y el menú 0.1.2 mantienen sus versiones. La clave privada no se publica.
+Minecraft 1.21.11, Fabric 0.19.5, Fabric API 0.141.6+1.21.11 y Java 21 mantienen sus versiones. Instrucciones, validación y hashes acompañan la publicación. La clave privada no se publica.
 
 El canal firmado está en [updates/beta.json](updates/beta.json).
